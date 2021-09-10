@@ -9,4 +9,4 @@
 
 Role.create(name: "user")
 Role.create(name: "admin")
-User.create(first_name: "Admin", last_name: "Anton", email: "luka14a@gmail.com", password: "123123", password_confirmation: "123123", role_id: 2)
+User.create(first_name: "Admin", last_name: "Anton", email: "luka14a@gmail.com", password: "123123", password_confirmation: "123123", role_id: 2).skip_confirmation!

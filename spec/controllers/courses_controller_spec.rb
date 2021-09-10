@@ -60,7 +60,7 @@ RSpec.describe CoursesController, type: :controller do
   end
 
   describe 'GET #show' do
-    fcontext 'show action' do
+    context 'show action' do
       let(:readeds_relation) { instance_double('ActiveRecord::Relation') }
       before do
         allow(Course).to receive(:find).and_return(course)
@@ -81,7 +81,7 @@ RSpec.describe CoursesController, type: :controller do
 
   describe 'GET #new' do
 
-    fcontext 'action new' do
+    context 'action new' do
       before do
         allow_any_instance_of(CanCan::ControllerResource).to receive(:load_and_authorize_resource){ user }
         allow(Course).to receive(:new)#.and_return(course)

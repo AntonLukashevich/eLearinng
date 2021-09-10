@@ -36,17 +36,19 @@ RSpec.describe UsersController, type: :controller do
     }
   end
 
-  context 'GET #index' do
+  fcontext 'GET #index' do
     before do
       allow(User).to receive(:all).and_return(users)
-      get :index # попадаем в action index
+      # попадаем в action index
     end
 
     it 'render template #index' do
+      get :index
       is_expected.to render_template :index
     end
 
     it 'return users' do
+      get :index
       expect(assigns(:users)).to match_array(users)
     end
   end

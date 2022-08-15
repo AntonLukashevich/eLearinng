@@ -4,11 +4,9 @@ require 'rails_helper'
 require 'spec_helper'
 
 RSpec.describe Answer, type: :model do
-  # before(:all) do
-  #   @answer = create(:answer)
-  # end
-  #
-  # it "should be valid" do
-  #   expect(@answer.valid?).to be_valid
-  # end
+  describe 'relationship' do
+    it 'belongs_to question' do
+      should belong_to :question
+    end
+  end
 end

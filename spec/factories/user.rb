@@ -7,7 +7,8 @@ FactoryBot.define do
     email      { Faker::Internet.email }
     password   { '123123' }
     avatar     { Faker::Avatar.image }
-    role
+    association :role, factory: :user_role
     # Add additional fields as required via your User model
   end
+
 end

@@ -123,6 +123,9 @@ GEM
       factory_bot (~> 6.1.0)
       railties (>= 5.0.0)
     ffi (1.15.0)
+    fuubar (2.5.1)
+      rspec-core (~> 3.0)
+      ruby-progressbar (~> 1.4)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     i18n (1.8.9)
@@ -364,6 +367,7 @@ DEPENDENCIES
   devise
   factory_bot_rails
   faker!
+  fuubar
   image_processing (~> 1.2)
   jbuilder (~> 2.7)
   jquery-rails

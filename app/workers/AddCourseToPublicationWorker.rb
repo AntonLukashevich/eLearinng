@@ -8,3 +8,4 @@ class AddCourseToPublicationWorker
     for_publication_course.update(status: 'ready')
   end
 end
+
